@@ -1,0 +1,114 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 10px;
+  background: black;
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+  align-items: center;
+}
+
+.controls button {
+  margin-bottom: 20px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 107px
+ 
+}
+
+#photo-btn{
+  border-radius: 100%;
+  margin-bottom: 50px;
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  max-width: 70px;
+}
+
+.controls button:hover {
+  margin-bottom: 20px;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.photobooth {
+  background: black;
+  max-width: 150rem;
+  margin: 2rem auto;
+  border-radius: 2px;
+}
+
+/*clearfix*/
+.photobooth:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.photo {
+  width: 100%;
+  float: left;
+  border-radius: 10px;
+}
+
+.player {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width:200px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 2px solid black;
+  border-right: 10px solid black;
+  border-left: 10px solid black;
+  border-bottom: 10px solid black
+}
+
+/*
+  Strip!
+*/
+
+.strip {
+  padding: 2rem;
+  font-size: 0;
+}
+
+.strip a img {
+  display: inline-block;
+  margin: 0;
+}
+
+
+.strip img {
+  width: 100px;
+  overflow-x: scroll;
+  padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  background: white;
+}
+
+.strip a:nth-child(5n+1) img { transform: rotate(10deg); }
+.strip a:nth-child(5n+2) img { transform: rotate(-2deg); }
+.strip a:nth-child(5n+3) img { transform: rotate(8deg); }
+.strip a:nth-child(5n+4) img { transform: rotate(-11deg); }
+.strip a:nth-child(5n+5) img { transform: rotate(12deg); }
